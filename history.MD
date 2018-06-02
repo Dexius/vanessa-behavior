@@ -1,3 +1,7 @@
+### 5.0.XXX
+
+* объединение с ADD в единый продукт- https://github.com/silverbulleters/add 
+
 ### 1.1.131
 * Исправлена ошибка в шаге: And table "List" contains lines
 * Исправлен досадный баг в режиме запрета синхронных вызовов.
