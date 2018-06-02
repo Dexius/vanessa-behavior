@@ -12,6 +12,4 @@ https://github.com/silverbulleters/add - объединенный проект �
 
 инсталяция при помощи команды `opm install add` из единого хаба пакетов проекта http://oscript.io
 
-Контура сборки предоставлены
-
-[![DOcean] (https://www.digitalocean.com/assets/media/logos-badges/png/DO_Logo_Horizontal_Blue-3db19536.png)](https://m.do.co/c/2a3a0769ac84)
+Контура сборки предоставлены - сервисом [Digital Ocean](https://m.do.co/c/2a3a0769ac84)
