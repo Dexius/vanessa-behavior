@@ -6364,7 +6364,13 @@
 			Возврат "call runsikulix -r ";
 		КонецЕсли;
 	Иначе
-		Возврат """C:\Program Files (x86)\Java\jre6\bin\java.exe"" -Xms64M -Xmx512M -Dfile.encoding=UTF-8 -Dpython.path=""C:\Program Files (x86)\Sikuli X\sikuli-script.jar/"" -jar ""C:\Program Files (x86)\Sikuli X\sikuli-ide.jar"" -r ";
+		//Возврат """C:\Program Files (x86)\Java\jre6\bin\java.exe"" -Xms64M -Xmx512M -Dfile.encoding=UTF-8 -Dpython.path=""C:\Program Files (x86)\Sikuli X\sikuli-script.jar/"" -jar ""C:\Program Files (x86)\Sikuli X\sikuli-ide.jar"" -r ";
+        ПутьКФайлу = "";
+        СостояниеVanessaBehavior = ПолучитьСостояниеVanessaBehavior();
+        ПутьКТекущемуFeatureФайлу = СостояниеVanessaBehavior.ТекущаяФича.ПолныйПуть;
+        ПутьКФайлу = Лев(ПутьКТекущемуFeatureФайлу, СтрНайти(ПутьКТекущемуFeatureФайлу, "features" ) - 1) + "\tools\CikuliX\runsikulix.cmd -r ";
+
+        Возврат "call " + ПутьКФайлу;		
 	КонецЕсли;
 	
 КонецФункции
